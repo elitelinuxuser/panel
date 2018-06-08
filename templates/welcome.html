@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+Welcome {{email}}!
+<div class="pull-right">
+  <button type="button" class='btn btn-danger' name="button" onclick="location.href='{% url 'log' %}'">Logout</button>
+</div>
+<button type="button" class="btn btn-primary" onclick="location.href='{% url 'create' %}'">Push</button>
+<button type="button" class="btn btn-primary" >Check</button>
+{% endblock %}
